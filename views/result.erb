@@ -1,0 +1,16 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Votelog</title>
+</head>
+<body>
+<h1>투표결과</h1>
+  <% @list.each do |row| %>
+  <!-- <% row.inspect %> -->
+  <!-- <p><%= row[0] %>님은 <%= row[1] %>에 투표하셨습니다.</p> -->
+  <% end %>
+
+  <p>1시간에 투표한 사람: <%=@count["1hour"]%> 명 </p>
+  <p>2시간에 투표한 사람: <%=@count["2hour"]%> 명 </p>
+  <p>3시간에 투표한 사람: <%=@count["3hour"]%> 명 </p>
+</body>
